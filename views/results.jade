@@ -1,9 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  ul#resultslist
-    each ingr in text
-      li= ingr
-  p
-    a(href="/upload") Upload another
+  .container-fluid
+    .row-fluid
+      .span4.offset4
+        h1= title
+        ul#resultslist
+          each ingr in text
+            li= ingr
+        p
+          a(href="/upload") Upload another
