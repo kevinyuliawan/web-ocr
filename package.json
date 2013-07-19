@@ -6,7 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "*",
+    "express": "3.3.4",
     "jade": "*",
     "stylus": "*",
     "nodemon": "*",

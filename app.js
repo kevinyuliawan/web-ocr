@@ -13,11 +13,8 @@ var express = require('express')
 
 var app = express();
 
-// custom variables
-var EventEmitter = require( "events" ).EventEmitter;
-var outtext = '';
-var controller = new EventEmitter();
-upload.configure(controller);
+// globals require to make those variables available
+var globals = require('./routes/globals');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
