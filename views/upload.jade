@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .container-fluid
+    .row-fluid
+      .span4.offset4
+        h1= title
+        .span12.offset2
+          form#uploadForm(action='/upload', method='post', enctype='multipart/form-data')
+            // input(type='file', name='uploadFile')
+            // button(type='submit', class='btn') Upload
+            #upload.span7
+              <div class="fileupload fileupload-new" data-provides="fileupload">
+              <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" /></div>
+              <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+              <div>
+              <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" name="uploadFile" /></span>
+              <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+              </div>
+              </div>
+              button(type='submit', class='btn') Upload
+              

@@ -17,6 +17,7 @@ var app = express();
 var EventEmitter = require( "events" ).EventEmitter;
 var outtext = '';
 var controller = new EventEmitter();
+upload.configure(controller);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
